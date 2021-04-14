@@ -6,6 +6,7 @@
 
 body{
     background-color: lightgray;
+    min-height: 300vh;
 }
 
 /* GLOBALS */
@@ -32,9 +33,10 @@ body{
 /* BARRA DE NAVEGAÇÃO FIM */
 
 #hero img{
-    min-height: 200px;
+    min-height: 250px;
     min-width: 700px;
     width: 100%;
+
     
 }
 
@@ -80,6 +82,30 @@ ul li li h6{
         display: none  !important;
     }
 }
+
+
+.card{
+    max-width: 250px;
+    transition: all .4s;
+}
+
+.card:hover{
+    box-shadow: 4px 2px 18px rgba(0,0,0,0.3);
+}
+
+
+
+/* OWL CARROUSEL */
+.item{
+    
+    height: auto;
+    width: 320px;
+    /* background-color: #fff; */
+}
+
+
+
+
 
 /*
 xs <576px
