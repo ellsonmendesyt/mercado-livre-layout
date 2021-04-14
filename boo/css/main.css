@@ -1,5 +1,9 @@
 *{ box-sizing: border-box;}
 
+.dh{
+    min-height: 200px !important;
+}
+
 body{
     background-color: lightgray;
 }
@@ -27,14 +31,55 @@ body{
 }
 /* BARRA DE NAVEGAÇÃO FIM */
 
+#hero img{
+    min-height: 200px;
+    min-width: 700px;
+    width: 100%;
+    
+}
+
+/*  */
+.circulo{
+    border: 1px solid lightgray;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: blue;
+    font-size: 18px;
+}
+.fa-plus-circle{
+    /* color: red; */
+    font-size: 25px;
+}
 
 
+/* BARRA DE PAGAMENTOS */
+.pagamentos{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
 
 
+ul li li{
+    display: flex !important;
+    align-items: center;
+    border: none !important;
+}
 
+ul li li h6{
+    margin-bottom: 0;
+    padding: 0 0;
+}
 
-
-
+/* oculta alguns intes nas telas pequenas */
+@media (max-width:768px){
+    .esconder{
+        display: none  !important;
+    }
+}
 
 /*
 xs <576px
