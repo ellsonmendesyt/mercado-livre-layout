@@ -1,0 +1,60 @@
+*{ box-sizing: border-box;}
+
+body{
+    background-color: lightgray;
+}
+
+/* GLOBALS */
+.amarelo{background-color: #fff159;}
+.out{outline: 2px solid orange;}
+
+/* BARRA DE NAVEGAÇAO */
+.barra-busca input,.barra-busca input:hover, .barra-busca input:not(:hover),.barra-busca input:active{
+    box-shadow: none;
+    border-right: none;
+}
+.barra-busca .input-group-text{
+  background-color: #fff;
+  border-left: none;
+}
+
+/* de zero a mil deixa o espaço */
+@media (max-width:1000px) {
+    .barra-busca{
+        width: 50%;
+        margin-right: 50px !important;
+    }
+}
+/* BARRA DE NAVEGAÇÃO FIM */
+
+
+
+
+
+
+
+
+
+
+/*
+xs <576px
+sm	≥576px
+md	≥768px
+lg	≥992px
+xl	≥1200px
+xxl	≥1400px
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
