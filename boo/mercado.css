@@ -1,0 +1,175 @@
+
+
+
+
+body{
+    background-color:lightgray;
+    height: 500vh;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+.logo-p img{
+    width: 50px !important;
+    height: 36px !important;
+    display: block;
+}
+
+.logo-g{
+    width: 130px;
+    height: 36px;
+    display: none;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+
+.caixa{
+    /* width: 50%; */
+    flex-basis: 80%;
+}
+
+
+#hero .carousel-item img{
+    min-height: 150px  !important;
+}
+
+.mh{
+    min-height: 100px !important;
+}
+
+
+
+@media (min-width:768px){
+    .logo-g{ display: block;}
+    .logo-p{display: none;}
+    .navbar{
+        justify-content: space-around !important;
+    }
+    .caixa{
+        flex-basis:50%;
+    }
+}
+
+
+
+.out{ outline: 2px solid orange;}
+
+
+.amarelo{
+    background-color:#eadd61 !important;
+}
+
+
+.input-group-text{
+    background-color: #fff;
+    border-right-color: transparent!important;
+}
+.c-busca:hover{
+    box-shadow: none;
+}
+
+
+.w-40{
+    width: 40%;
+}
+
+.w-60{width: 60%;}
+
+.anuncio-fome img{
+    display: block;
+    width: 340px;
+    height: 39px;
+
+}
+
+@media screen and(max-width:1024px){
+    .anuncio-fome{
+       display:none;
+    }
+}
+
+
+
+
+/* PAGAMENTOS */
+
+
+.pagamentos li{
+
+    display: flex;
+    border-radius: none !important;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: column; */
+    width: 33.33%;
+    border-left: 5px solid blue;
+    height: 80px !important;
+
+    padding: 20px !important;
+    
+}
+
+.icon-desc{
+    padding: 22px 10px !important;
+}
+
+.pagamentos .icon{
+ width: 60px;
+ height: 60px;
+  /* font-size: 40px !important; */
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 50%;
+  color:blue;
+  line-height: 40px;
+ 
+}
+
+.card-deck{
+    flex-wrap: nowrap !important;
+   display: flex;
+    /* flex-direction: row !important; */
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 450px;
+    justify-content: center;
+    /* background-color:cornsilk; */
+}
+
+
+#ofertas .card{
+    /* width: 250px; */
+    min-width: 250px;
+    
+    
+}
+
+@media (min-width:667px){
+
+}
+
+.titulo{
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.titulo a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+
+
+/* 
+--breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+
+*/

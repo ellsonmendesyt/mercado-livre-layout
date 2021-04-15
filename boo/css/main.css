@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 *{ box-sizing: border-box;}
 
 .dh{
     min-height: 200px !important;
 }
+
+.branco{background-color: #fff !important;}
+
+
+
+
 
 body{
     background-color: lightgray;
@@ -32,9 +41,16 @@ body{
 }
 /* BARRA DE NAVEGAÇÃO FIM */
 
+
+
+/* botoes do carrosel */
+.carousel-control-prev-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
 #hero img{
     min-height: 250px;
-    min-width: 700px;
+    /* min-width: 700px; */
     width: 100%;
 
     
@@ -75,6 +91,7 @@ ul li li h6{
     margin-bottom: 0;
     padding: 0 0;
 }
+ul li li a{text-decoration: none;}
 
 /* oculta alguns intes nas telas pequenas */
 @media (max-width:768px){
@@ -84,10 +101,73 @@ ul li li h6{
 }
 
 
+.titulo h4{
+    font-family: 'Roboto', sans-serif;
+    /* color: #66666666; */
+    color: gray;
+    font-size: 26px !important;
+    font-weight: lighter;
+}
+.titulo a{
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
 .card{
-    max-width: 250px;
+    /* max-width: 250px; */
     transition: all .4s;
 }
+
+.confira{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.confira > .card{
+    margin: 20px 4px !important;
+}
+
+
+
+
+/* Cartao brasil sem fome */
+
+.confira .card{
+    overflow-x: hidden;
+    /* min-width: 400px; */
+}
+
+.confira .card-body{
+    padding: 0;
+}
+.card-3{
+    box-sizing: border-box;
+    max-width: 500px !important;
+    min-height: 200px !important;
+    max-height: 250px;
+    padding-left: 40px !important;
+    margin: 0px !important;
+}
+
+
+
+.confira .esquerda{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.confira .esquerda h6{
+    font-weight: 350;
+}
+
 
 .card:hover{
     box-shadow: 4px 2px 18px rgba(0,0,0,0.3);
@@ -103,8 +183,75 @@ ul li li h6{
     /* background-color: #fff; */
 }
 
+/*
+ previnir que a imagem encolha ---------------
+ mas quebra o layout de baixo-----------------
+*/
+.cut-off{
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+    min-height: 250px !important;
+}
+
+/* POPAGANDA DO CARRO */
+
+.ads{
+    min-height: 200px;
+    overflow-x: hidden;
+}
 
 
+
+
+
+
+
+/* RODAPÉ  DEPOIS TIRAR DO CARTAO*/
+footer .card{
+    text-align: center;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+footer .card:hover{
+    box-shadow: none !important;
+}
+
+footer .card-header{
+    background-color: #fff;
+    border: none;
+    padding-bottom: 0;
+}
+
+footer .card h1{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+footer .card p{
+    margin-bottom: 5px;
+    font-size: 15px !important;
+    color: #999;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.divisor::before{
+    content:'';
+    /* border-right: 2px solid lightgray; */
+    /* position: absolute; */
+    position: absolute;
+    /* top: 100px; */
+    z-index: 400;
+    top: 110px;
+    height: 50px;
+
+    background-color:gray;
+    width: 2px !important;
+}
 
 
 /*
