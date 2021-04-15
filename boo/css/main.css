@@ -15,7 +15,7 @@
 
 body{
     background-color: lightgray;
-    min-height: 300vh;
+    /* min-height: 300vh; */
 }
 
 /* GLOBALS */
@@ -178,9 +178,10 @@ ul li li a{text-decoration: none;}
 /* OWL CARROUSEL */
 .item{
     
-    height: auto;
+    /* border: 1px solid blue; */
+    height: 385px;
     width: 320px;
-    /* background-color: #fff; */
+    
 }
 
 /*
@@ -208,6 +209,10 @@ ul li li a{text-decoration: none;}
 
 
 /* RODAPÉ  DEPOIS TIRAR DO CARTAO*/
+footer{
+    outline: 1px solid lime;
+    margin-bottom: 0px !important;
+}
 footer .card{
     text-align: center;
     border: none !important;
@@ -252,6 +257,53 @@ footer a{
     background-color:gray;
     width: 2px !important;
 }
+
+
+/* icone de shipping */
+.shipping-icon{
+    width: 20px;
+    -webkit-font-smoothing:  antialiased;
+    color:#333!important;
+    fill: limegreen;
+}
+
+
+
+
+
+/* CARTAO PERSONLIZADO */
+.cartao{
+    width: 250px;
+}
+.cartao .card-body{
+    position: relative !important;
+}
+
+.cartao span{
+    position: absolute !important;
+    border: 1px solid lightgray;
+    bottom: -15px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+}
+.cartao .card-footer{
+    background-color: #fff;
+    height: 70px;
+    transition: all .1s .2s ease-in-out;
+   overflow-y: hidden;
+}
+
+.cartao:hover .card-footer{
+    height: 120px;
+}
+
+/* CARTAO PERSONALIZADO FIM */
+
+
 
 
 /*
